@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Pomodoro Timer</h1>
+
+    <div class="notification-settings">
+      <label for="notification-sound">Notification Sound:</label>
+      <select id="notification-sound">
+        <option value="default">Default</option>
+        <option value="chime">Chime</option>
+        <option value="alarm">Alarm</option>
+      </select>
+    </div>
+    
+
+    <div class="mode-display">
+      <h2 id="mode-label">Work</h2>
+    </div>
+
+    <div class="mode-toggle">
+        <button id="work-mode-btn">Switch to Work</button>
+        <button id="break-mode-btn">Switch to Break</button>
+      </div>
+      
+      
+
+    <div class="timer-display">
+      <h1 id="timer">25:00</h1>
+    </div>
+
+    <div class="controls">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn">Pause</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <div class="settings">
+      <label>
+        Work Duration (minutes):
+        <input type="number" id="work-duration" min="1" max="60" value="25" />
+      </label>
+      <label>
+        Break Duration (minutes):
+        <input type="number" id="break-duration" min="1" max="30" value="5" />
+      </label>
+    </div>
+    <div class="tasks">
+        <h3>Tasks</h3>
+        <input type="text" id="task-input" placeholder="Add a task..." />
+        <button id="add-task-btn">Add</button>
+        <ul id="task-list"></ul>
+      </div>
+      
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+:root {
+    --primary: #e63946;
+    --secondary: #f1faee;
+    --dark: #1d3557;
+    --text: #333;
+    --shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f1faee, #a8dadc);
+    margin: 0;
+    padding: 1rem; /* Added padding */
+    display: flex;
+    justify-content: center;
+    align-items: start; /* Changed from center to start */
+    min-height: 100vh; /* changed from height to min-height */
+    overflow-y: auto;
+  }
+  
+  #app {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px var(--shadow);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    color: var(--dark);
+  }
+  
+  #mode-label {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  #timer {
+    font-size: 4rem;
+    color: var(--dark);
+    margin: 1rem 0;
+  }
+  
+  .controls button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #d62828;
+  }
+  
+  .settings {
+    margin-top: 1.5rem;
+  }
+  
+  .settings label {
+    display: block;
+    margin: 0.5rem 0;
+    color: var(--text);
+  }
+  
+  .settings input {
+    width: 60px;
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .mode-toggle {
+    margin-top: 1rem;
+  }
+  
+  .mode-toggle button {
+    background-color: var(--dark);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .mode-toggle button:hover {
+    background-color: #457b9d;
+  }
+  .tasks {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .tasks input {
+    padding: 0.4rem;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .tasks button {
+    padding: 0.4rem 0.8rem;
+    margin-left: 0.5rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tasks ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .tasks li {
+    background: #f9f9f9;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tasks li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  
+  .notification-settings {
+    margin-top: 1.5rem;
+    color: var(--text);
+  }
+  
+  .notification-settings label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .notification-settings select {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 1rem;
+    color: var(--dark);
+    box-shadow: 0 2px 6px var(--shadow);
+    transition: border 0.3s;
+  }
+  
+  .notification-settings select:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  
+  
+  
+  @media (max-width: 500px) {
+    #app {
+      padding: 1.5rem;
+    }
+  
+    #timer {
+      font-size: 3rem;
+    }
+  
+    .controls button,
+    .mode-toggle button,
+    .tasks button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .tasks input {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  
+    .tasks {
+      text-align: center;
+    }
+  
+    .delete-btn {
+      font-size: 1rem;
+    }
+    .notification-settings select {
+      font-size: 0.9rem;
+      padding: 0.3rem;
+    }
+  
+  }
+  
+  
