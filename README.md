@@ -24,20 +24,22 @@ pomodoro-timer/
 ├── dist/                   # Webpack output (auto-generated)
 ├── node_modules/           # Installed dependencies
 ├── src/                    # Source code
+│   ├── assets/             # Assets (sounds, images, etc.)
+│   │   ├── default.mp3     # Default sound
+│   │   ├── chime.mp3       # Optional sound
+│   │   └── alarm.mp3       # Optional sound
 │   ├── index.js            # App entry point
 │   ├── timer.js            # Timer logic
 │   ├── ui.js               # DOM handling
 │   ├── settings.js         # Settings management
 │   ├── tasks.js            # Task list logic
 │   ├── notifications.js    # Sound alerts
-│   ├── style.css           # App styling
-│   ├── default.mp3         # Default sound
-│   ├── chime.mp3           # Optional sound
-│   └── alarm.mp3           # Optional sound
+│   └── style.css           # App styling
 ├── index.html              # HTML template
 ├── package.json            # Project metadata & scripts
 ├── webpack.config.js       # Webpack config
 └── README.md               # You're here!
+
 ```
 
 ---
@@ -88,7 +90,8 @@ This will generate optimized files in the `/dist` folder.
 
 ## 📸 Demo Screenshot (optional)
 
-> *(You can drag a screenshot into this section or add one from GitHub UI)*
+![image](https://github.com/user-attachments/assets/a44c329b-6d7a-43d8-8769-8af6d2aa50b5)
+
 
 ---
 
